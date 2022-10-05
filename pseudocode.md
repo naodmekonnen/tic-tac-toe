@@ -66,12 +66,16 @@
     - this function will update the state of the game
     - an empty array is set to be filled one at a time when each cell is clicked
     -     
-
-
 ## checkWin/draw
     - this function will check for a win
     - this function will run a conditional to check whether all nine tiles have been filled and a winning state has been reached. If all tiles are filled and no win has been
     reached, then it will be a draw.
+    -### ways to check for winning conditions(possible ways to try)
+        - the board state can be a 2D array instead of 1D array.
+        - then loop over the columns and rows and check if the resulting array contains all X's or O's.
+        - check the winning conditions by looping over the winConditions array(2D) and then looping over the indices in each element of winConditions 
+        array and comparing all to X and to O.
+
 ## displayResult
     - after the checkWin function runs, this function will display the results of the game(win or draw)
 ## resetGame
