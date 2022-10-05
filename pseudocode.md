@@ -13,7 +13,7 @@
     - the tiles in the grid must be clickable
 --- 
 
-## States in the game
+# States in the game
 ## Initial state :clear board and ready to start game
 ## Player turns(state)
     - player makes a move and has the symbol X
@@ -36,7 +36,6 @@
     - ex: current state = ['','','','','','','','','']
     - (how is this array updated as the game progresses? what function?)
     
-
 ## winning state
     - a player wins when three of the same symbols are laid horizontally, vertically or diagonally
     - there are 8 possible combinations for a win condition to be true;
@@ -47,21 +46,34 @@
      - to check win condition: if any of the 8 winning conditions (an array of 3 indices that are defined above) are matched in the currentState array
     - (what method will be used to compare the two arrays?)
 
-### Functions
+# Functions
+
 ## init()
     - sets the initial page of the game:clear board and ready to play
 
 ## drawBoard()
     - this function will dynamically create the DOM elements to create the playing board
-## setState
-    - ?
+    - this function will create separate divs for each tile in the game
+    - it will also create the different bootstrap classes for each div
+
 ## handleClick
     - this function will execute when a tile in the game is clicked
+    - this function will update the cells as they are clicked
+    - 
+
+## setState
+    - (can this function be passed in as a parameter in the handleClick function?)
+    - this function will update the state of the game
+    - an empty array is set to be filled one at a time when each cell is clicked
+    -     
+
+
 ## checkWin/draw
     - this function will check for a win
     - this function will run a conditional to check whether all nine tiles have been filled and a winning state has been reached. If all tiles are filled and no win has been
     reached, then it will be a draw.
 ## displayResult
-    - after the checkWin function runs, this function will display the results of the game()
+    - after the checkWin function runs, this function will display the results of the game(win or draw)
 ## resetGame
-    - after the displayResult function runs, this function executes and resets the board of the game y
+    - after the displayResult function runs, this function executes and resets the board of the game
+    - 
