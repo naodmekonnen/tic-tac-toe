@@ -62,16 +62,16 @@
         - give the div a className
         - use .appendChild to append element to DOM
         - use a for loop to iterate and increment the id variable to create divs with unique id's    
+        
+## startGame
+    - (can this function be passed in as a parameter in the handleClick function?)
+    - use a globally defined variable for the div's to add an event listener for when the tiles are clicked
+    - pass a new parameter(function to update tiles)in this function  
 
 ## handleClick
     - this function will execute when a tile in the game is clicked
     - this function will update the tiles as they are clicked
     - pass 
-
-## startGame
-    - (can this function be passed in as a parameter in the handleClick function?)
-    - use a globally defined variable for the div's to add an event listener for when the tiles are clicked
-    - pass a new parameter(function to update tiles)in this function  
 
 ## updateTiles
     - this function will update the state of the game as the tiles are clicked
