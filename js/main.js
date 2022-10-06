@@ -3,9 +3,9 @@ let id = 0;
 // let classnames = 0;
 function createDiv(){
     let div = document.createElement('div');
-    // div.innerHTML = 'div' + id;
+    div.innerHTML = 'div' + id;
     div.id = 'tile' + id++;
-    div.className = 'boxes';
+    div.className = 'g-col-6">.g-col-6';
     // div.setAttribute = 'boxIndex' + att++;
     document.body.appendChild(div);
 }
@@ -46,7 +46,7 @@ console.log(tiles);
 
 function startGame(){
     tiles.forEach(tiles => tiles.addEventlistener('click', updateTiles))
-}
+};
 
 function updateTiles(){
     let tileIndex = this.getElementById('id');
