@@ -135,10 +135,10 @@ function checkWin(){
             console.log(gameInfo.textContent);
         }
 
-        if(cell0 == '' || cell1 ==''|| cell3 ==''){
+        if(cell2 == '' || cell4 ==''|| cell6 ==''){
             continue;
         }
-        if(cell0 == cell1 && cell1 == cell2){
+        if(cell2 == cell4 && cell4 == cell6){
             gameInfo.textContent = '`${currentPlayer} wins!!';
             console.log(gameInfo.textContent);
         }
