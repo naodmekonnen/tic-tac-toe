@@ -1,12 +1,13 @@
 
+let att = 0;
 let id = 0;
 // let classnames = 0;
 function createDiv(){
     let div = document.createElement('div');
     div.innerHTML = 'div' + id;
     div.id = 'tile' + id++;
-    div.className = 'g-col-6">.g-col-6';
-    // div.setAttribute = 'boxIndex' + att++;
+    div.className = 'boxes';
+    div.dataset.boxIndex = 'boxIndex' + att++;
     document.body.appendChild(div);
 }
 for (let i=0; i<=8; i++){
@@ -49,7 +50,7 @@ function startGame(){
 };
 
 function updateTiles(){
-    let tileIndex = this.getElementById('id');
+    let tileIndex = this.getAttribute('boxIndex');
     console.log(tileIndex);
 
     tiles[tileIndex].textContent = currentPlayer;
