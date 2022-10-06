@@ -146,3 +146,7 @@ function checkWin(){
 
 }
 }
+
+function clearBaord(){
+    
+}
